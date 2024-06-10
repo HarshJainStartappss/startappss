@@ -1,0 +1,36 @@
+.themeBg {
+  background: #1d2025 !important;
+  color: white !important;
+}
+
+.secDiff {
+  margin-bottom: 80px;
+}
+
+.afterHead {
+  margin-bottom: 40px;
+}
+/* .count-box{
+     display: flex;
+     align-items: center;
+}
+
+.count-box-icon{
+     margin-right: 7px;
+}
+
+.myIcon{
+     font-size: 30px;
+     margin-right: 7px;
+}
+
+.count-box-content span{
+     font-size: 24px;
+     font-weight: 700;
+}
+
+.backGroundDiv {
+     background-image: url("../public/static/assets/img/about.jpg");
+     background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+} */
