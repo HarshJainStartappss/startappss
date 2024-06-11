@@ -3,7 +3,6 @@ import Head from "next/head";
 import Link from "next/link";
 import { compareDesc, format, parseISO } from "date-fns";
 // import { allPosts } from "contentlayer/generated";
-// import { allPosts } from "contentlayer/generated";
 
 const Blog: NextPage = ({ posts }: any) => {
   return (
