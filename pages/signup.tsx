@@ -2,7 +2,8 @@ import { NextPage } from "next";
 import NextLink from "next/link";
 import { Box, Center, Stack, Text } from "@chakra-ui/react";
 //@ts-ignore
-import { Auth, Link } from "@saas-ui/react";
+import { Auth } from "@saas-ui/auth";
+import { Link } from "@saas-ui/react";
 import { Features } from "components/features";
 import { BackgroundGradient } from "components/gradients/background-gradient";
 import { Section } from "components/section";

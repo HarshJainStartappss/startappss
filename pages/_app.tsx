@@ -19,11 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <SaasProvider theme={theme}>
       <AuthProvider>
-        <Layout
-          announcementProps={announcement}
-          headerProps={header}
-          footerProps={footer}
-        >
+        <Layout announcementProps={announcement} headerProps={header}>
           <Component {...pageProps} />
         </Layout>
       </AuthProvider>

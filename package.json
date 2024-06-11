@@ -29,12 +29,12 @@
     "contentlayer": "^0.3.4",
     "date-fns": "^2.30.0",
     "framer-motion": "^10.18.0",
-    "next": "^13.4.0",
+    "next": "^13.5.6",
     "next-seo": "^6.5.0",
     "prop-types": "^15.8.1",
-    "react": "18.2.0",
+    "react": "^18.3.1",
     "react-bootstrap": "^2.10.2",
-    "react-dom": "18.2.0",
+    "react-dom": "^18.3.1",
     "react-icons": "^4.12.0",
     "react-remove-scroll": "^2.5.9",
     "react-slick": "^0.30.2",
@@ -47,7 +47,7 @@
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.1",
     "eslint": "8.39.0",
-    "eslint-config-next": "13.3.1",
+    "eslint-config-next": "^13.5.6",
     "typescript": "5.0.4"
   }
 }

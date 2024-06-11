@@ -1,3 +1,4 @@
+//@ts-ignore
 import { Box } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
@@ -8,14 +9,13 @@ import {
   AnnouncementBanner,
   AnnouncementBannerProps,
 } from "../announcement-banner";
-import { Footer, FooterProps } from "./footer";
+import Footer from "./NewFooter";
 // import { Footer, FooterProps } from './footer'
 
 interface LayoutProps {
   children: ReactNode;
   announcementProps: AnnouncementBannerProps;
   headerProps: HeaderProps;
-  footerProps: FooterProps;
   // footerProps: FooterProps
 }
 

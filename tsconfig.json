@@ -28,6 +28,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".contentlayer/generated"
-  ],
+, "components/layout/Footer.js"  ],
   "exclude": ["node_modules"]
 }

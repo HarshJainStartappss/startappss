@@ -13,9 +13,9 @@ const Blog: NextPage = ({ posts }: any) => {
 
       <h1 className="mb-8 text-3xl font-bold">Contentlayer Blog Example</h1>
 
-      {posts.map((post, idx) => (
+      {/* {posts.map((post, idx) => (
         <PostCard key={idx} {...post} />
-      ))}
+      ))} */}
     </div>
   );
 };
