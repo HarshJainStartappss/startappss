@@ -207,7 +207,7 @@ const ServicesTabs = () => {
                     <br />
                     <h5>
                       The project sought to address the need for a centralized
-                      content moderation system that could streamline IQVIA's
+                      content moderation system that could streamline IQVIA&#39s
                       content management across multiple platforms, ensuring
                       consistency and efficiency
                     </h5>

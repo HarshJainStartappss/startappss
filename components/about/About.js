@@ -136,9 +136,9 @@ const AboutJs = () => {
                 <br />
                 <br />
                 <h3>
-                  "We prioritize the provision of the most esteemed indulgences,
+                  We prioritize the provision of the most esteemed indulgences,
                   treating the pleasures of work with due regard and
-                  consideration."
+                  consideration.
                 </h3>
                 <br />
                 <p>

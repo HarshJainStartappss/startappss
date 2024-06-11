@@ -1,6 +1,6 @@
 import React from "react";
 import { Section } from "components/section";
-import aboutImg from "../../assets/img/about.jpg"
+import aboutImg from "../../assets/img/about.jpg";
 import Image from "next/image";
 
 const About = () => {
@@ -63,8 +63,6 @@ const About = () => {
                       <p>Screens Coded</p>
                     </div>
                   </div>
-
-
                 </div>
               </div>
             </div>
@@ -75,9 +73,7 @@ const About = () => {
                 data-aos="zoom-in"
                 data-aos-delay="100"
               >
-                <Image src={aboutImg}
-                  className="img-fluid"
-                  alt="" />
+                <Image src={aboutImg} className="img-fluid" alt="" />
                 {/* <img
                   src={aboutImg}
                   className="img-fluid"
@@ -89,9 +85,9 @@ const About = () => {
                 <br />
                 <br />
                 <h3>
-                  "We prioritize the provision of the most esteemed indulgences,
+                  We prioritize the provision of the most esteemed indulgences,
                   treating the pleasures of work with due regard and
-                  consideration."
+                  consideration.
                 </h3>
                 <br />
                 <p>

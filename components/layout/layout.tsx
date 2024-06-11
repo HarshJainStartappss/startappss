@@ -8,13 +8,14 @@ import {
   AnnouncementBanner,
   AnnouncementBannerProps,
 } from "../announcement-banner";
+import { Footer, FooterProps } from "./footer";
 // import { Footer, FooterProps } from './footer'
-import Footer from "./Footer.js";
 
 interface LayoutProps {
   children: ReactNode;
   announcementProps: AnnouncementBannerProps;
   headerProps: HeaderProps;
+  footerProps: FooterProps;
   // footerProps: FooterProps
 }
 
