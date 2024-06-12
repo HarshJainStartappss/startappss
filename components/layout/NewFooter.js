@@ -53,7 +53,7 @@ const Footer = () => {
                         icon={faTwitter}
                         size="1x"
                         color="#1DA1F2"
-                        classNameName="footerIcon"
+                        className="footerIcon"
                         // spin
                       />
                       {/* <i className="bx bxl-twitter"></i> */}
@@ -67,7 +67,7 @@ const Footer = () => {
                         icon={faInstagram}
                         size="1x"
                         color="#1DA1F2"
-                        classNameName="footerIcon"
+                        className="footerIcon"
                         // spin
                       />
                     </a>
@@ -80,7 +80,7 @@ const Footer = () => {
                         icon={faLinkedin}
                         size="1x"
                         color="#1DA1F2"
-                        classNameName="footerIcon"
+                        className="footerIcon"
                         // spin
                       />
                       {/* <i className="bx bxl-linkedin"></i> */}
