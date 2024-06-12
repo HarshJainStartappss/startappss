@@ -1,6 +1,7 @@
 .themeBg {
   background: #1d2025 !important;
   color: white !important;
+  box-shadow: 0px 0px 20px -11px rgba(214, 215, 216, 0.6) !important;
 }
 
 .secDiff {

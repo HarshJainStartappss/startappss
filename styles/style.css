@@ -77,8 +77,8 @@
 }
 
 .clientimg {
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: auto;
 }
 
 .imgServicesTabs {
@@ -160,6 +160,153 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* ---------  Career Modal ------ */
+
+.custom-modal .modal-content {
+  background-color: #1d303c !important; /* Change this color to your preferred background color */
+  border-radius: 10px;
+  /* border: 2px solid #007bff; */
+  color: balck !important ;
+}
+
+.custom-modal .modal-header {
+  background-color: #1d303c;
+  color: white;
+}
+
+.custom-modal .modal-footer {
+  background-color: #1d303c;
+  justify-content: center;
+}
+
+.custom-modal .btn,
+.custom-modal .close {
+  color: white !important;
+  background-color: #012258;
+  border: none;
+}
+
+.custom-modal .btn:hover,
+.custom-modal .close:hover {
+  color: white;
+  background-color: #153567;
+}
+
+/* ------ Contact ------ */
+
+.contact {
+  padding: 35px 10px;
+  background-color: black;
+}
+
+.contact .info-box {
+  color: #444444;
+  text-align: center;
+  /* box-shadow: 0 0 30px rgba(214, 215, 216, 0.6); */
+  padding: 32px 0 30px 0;
+}
+
+.contact .info-box i {
+  font-size: 32px;
+  color: #0f67af;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #777777;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.contact .myContactForm {
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 30px;
+}
+
+.contact .myContactForm .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .myContactForm .error-message br + br {
+  margin-top: 25px;
+}
+
+.contact .myContactForm .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .myContactForm .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .myContactForm .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .myContactForm input,
+.contact .myContactForm textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.contact .myContactForm input:focus,
+.contact .myContactForm textarea:focus {
+  border-color: #0f67af;
+}
+
+.contact .myContactForm input {
+  padding: 10px 15px;
+}
+
+.contact .myContactForm textarea {
+  padding: 12px 15px;
+}
+
+.contact .myContactForm button[type="submit"] {
+  background: #0f67af;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .myContactForm button[type="submit"]:hover {
+  background: #ff5e31;
 }
 
 /* --------------- Footer ----------- */

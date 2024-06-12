@@ -18,20 +18,20 @@ const Footer = () => {
   return (
     <>
       <footer id="footer">
-        <div class="footer-top">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-2 col-md-10 align-items-center justify-content-end">
-                <Image src={startappsImg} class="img-fluid" alt="" />
+        <div className="footer-top">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-2 col-md-10 align-items-center justify-content-end">
+                <Image src={startappsImg} className="img-fluid" alt="" />
                 {/* <img
                   //   src="./assets/img/Startappss.jpg"
-                  class="img-fluid"
+                  className="img-fluid"
                   alt=""
                 /> */}
                 <a href="#"></a>
               </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="footer-info">
+              <div className="col-lg-3 col-md-6">
+                <div className="footer-info">
                   <h3>Startappss Pvt. Ltd.</h3>
                   <p>
                     93 Heera Bag
@@ -44,53 +44,56 @@ const Footer = () => {
                     <strong>Email:</strong> info@startappss.com
                     <br />
                   </p>
-                  <div class="social-links mt-3">
-                    <a href="https://twitter.com/Startappss111" class="twitter">
+                  <div className="social-links mt-3">
+                    <a
+                      href="https://twitter.com/Startappss111"
+                      className="twitter"
+                    >
                       <FontAwesomeIcon
                         icon={faTwitter}
                         size="1x"
                         color="#1DA1F2"
-                        className="footerIcon"
+                        classNameName="footerIcon"
                         // spin
                       />
-                      {/* <i class="bx bxl-twitter"></i> */}
+                      {/* <i className="bx bxl-twitter"></i> */}
                     </a>
 
                     <a
                       href="https://www.instagram.com/startappss/"
-                      class="instagram"
+                      className="instagram"
                     >
                       <FontAwesomeIcon
                         icon={faInstagram}
                         size="1x"
                         color="#1DA1F2"
-                        className="footerIcon"
+                        classNameName="footerIcon"
                         // spin
                       />
                     </a>
 
                     <a
                       href="https://www.linkedin.com/company/startappss-system-india-pvt-ltd/"
-                      class="linkedin"
+                      className="linkedin"
                     >
                       <FontAwesomeIcon
                         icon={faLinkedin}
                         size="1x"
                         color="#1DA1F2"
-                        className="footerIcon"
+                        classNameName="footerIcon"
                         // spin
                       />
-                      {/* <i class="bx bxl-linkedin"></i> */}
+                      {/* <i className="bx bxl-linkedin"></i> */}
                     </a>
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-2 col-md-6 footer-links">
+              <div className="col-lg-2 col-md-6 footer-links">
                 <h4>Useful Links</h4>
                 <ul>
                   <li>
-                    <i class="bx bx-chevron-right"></i>
+                    <i className="bx bx-chevron-right"></i>
                     <a
                       id="terms"
                       href="#"
@@ -101,7 +104,7 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <i class="bx bx-chevron-right"></i>
+                    <i className="bx bx-chevron-right"></i>
                     <a
                       id="policy"
                       href="#"
@@ -114,7 +117,7 @@ const Footer = () => {
                 </ul>
               </div>
 
-              <div class="col-lg-4 col-md-6 footer-newsletter">
+              <div className="col-lg-4 col-md-6 footer-newsletter">
                 <h4>Our Newsletter</h4>
                 <p>Subscribe to our Newsletter for Tech Updates</p>
                 <form action="" method="post">
@@ -126,15 +129,15 @@ const Footer = () => {
           </div>
         </div>
 
-        <div class="container">
-          <div class="copyright">
+        <div className="container">
+          <div className="copyright">
             &copy; Copyright{" "}
             <strong>
               <span>Startappss</span>
             </strong>
             . All Rights Reserved
           </div>
-          <div class="credits"></div>
+          <div className="credits"></div>
         </div>
       </footer>
     </>

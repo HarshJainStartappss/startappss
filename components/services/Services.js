@@ -22,7 +22,7 @@ const Services = () => {
     <>
       <Section id="services" pos="relative" innerWidth="80%">
         <div className="afterHead">
-          <HeadingSec title="Our services" />
+          <HeadingSec title="Our Services" />
         </div>
 
         <div className="secDiff">

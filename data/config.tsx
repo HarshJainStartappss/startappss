@@ -24,23 +24,26 @@ const siteConfig = {
       {
         id: "home",
         label: "Home",
+        // href: "home",
       },
       {
         id: "about",
         label: "About",
+        // href: "about",
       },
       {
         id: "services",
         label: "Services",
+        // href: "services",
       },
       {
         id: "contact",
         label: "Contact",
       },
-      {
-        id: "careers",
-        label: "Careers",
-      },
+      // {
+      //   id: "careers",
+      //   label: "Careers",
+      // },
       // {
       //   label: '',
       //   href: '/login',

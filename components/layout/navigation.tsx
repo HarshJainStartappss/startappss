@@ -1,6 +1,6 @@
 import * as React from "react";
 import { HStack } from "@chakra-ui/react";
-
+import { useRef } from "react";
 import { useRouter } from "next/router";
 
 import siteConfig from "data/config";
@@ -13,9 +13,11 @@ import { MobileNavButton } from "components/mobile-nav";
 import { MobileNavContent } from "components/mobile-nav";
 import { useDisclosure, useUpdateEffect } from "@chakra-ui/react";
 
-import ThemeToggle from "./theme-toggle";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 
 const Navigation: React.FC = () => {
+  const [careerModal, setCareerModal] = React.useState(false);
   const mobileNav = useDisclosure();
   const router = useRouter();
   const activeId = useScrollSpy(
@@ -33,38 +35,89 @@ const Navigation: React.FC = () => {
     mobileNavBtnRef.current?.focus();
   }, [mobileNav.isOpen]);
 
+  const handleClose = () => setCareerModal(false);
+  const handleShow = () => setCareerModal(true);
+
+  // console.log("router==>", router);
+
   return (
-    <HStack spacing="2" flexShrink={0}>
-      {siteConfig.header.links.map(({ href, id, ...props }, i) => {
-        return (
-          <NavLink
-            display={["none", null, "block"]}
-            href={href || `/#${id}`}
-            key={i}
-            isActive={
-              !!(
-                (id && activeId === id) ||
-                (href && !!router.asPath.match(new RegExp(href)))
-              )
-            }
-            {...props}
-            className="myNav"
-          >
-            {props.label}
-          </NavLink>
-        );
-      })}
+    <>
+      <div className="careerModal">
+        <Modal
+          show={careerModal}
+          onHide={handleClose}
+          centered
+          dialogClassName="custom-modal"
+        >
+          <Modal.Header closeButton>
+            <Modal.Title>
+              <h2> Careers </h2>
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <h4> Oops, Currently We Are Not Hiring ! </h4>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button onClick={handleClose}>Ok</Button>
+          </Modal.Footer>
+        </Modal>
+      </div>
 
-      <ThemeToggle />
+      <HStack spacing="2" flexShrink={0}>
+        {siteConfig.header.links.map(({ href, id, ...props }, i) => {
+          return (
+            <NavLink
+              display={["none", null, "block"]}
+              href={href || `/#${id}`}
+              key={i}
+              isActive={router.asPath === `/#${id}`}
+              // isActive={
+              //   !!(
+              //     (id && activeId === id) ||
+              //     (href && !!router.asPath.match(new RegExp(href)))
+              //   )
+              // }
+              {...props}
+              className="myNav"
+            >
+              {props.label}
+            </NavLink>
+          );
+        })}
 
-      <MobileNavButton
-        ref={mobileNavBtnRef}
-        aria-label="Open Menu"
-        onClick={mobileNav.onOpen}
-      />
+        <NavLink
+          display={["none", null, "block"]}
+          href={`/#careers`}
+          // key={i}
+          isActive={router.asPath === `/#careers`}
+          // isActive={
+          //   !!(
+          //     (id && activeId === id) ||
+          //     (href && !!router.asPath.match(new RegExp(href)))
+          //   )
+          // }
+          // {...props}
+          className="myNav"
+          onClick={handleShow}
+          // onClick={}
+        >
+          Careers
+        </NavLink>
 
-      <MobileNavContent isOpen={mobileNav.isOpen} onClose={mobileNav.onClose} />
-    </HStack>
+        {/* <ThemeToggle /> */}
+
+        <MobileNavButton
+          ref={mobileNavBtnRef}
+          aria-label="Open Menu"
+          onClick={mobileNav.onOpen}
+        />
+
+        <MobileNavContent
+          isOpen={mobileNav.isOpen}
+          onClose={mobileNav.onClose}
+        />
+      </HStack>
+    </>
   );
 };
 

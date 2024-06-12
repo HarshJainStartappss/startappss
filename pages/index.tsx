@@ -59,14 +59,14 @@ import testimonials from "data/testimonials";
 import pricing from "data/pricing";
 // import Heading from "../components/heading/Heading.js"
 import Services from "../components/services/Services.js";
+import About from "components/about/About";
+import Contact from "../components/contact/Contact.js";
 
 import {
   Highlights,
   HighlightsItem,
   HighlightsTestimonialItem,
 } from "components/highlights";
-
-import About from "components/about/About";
 
 const Home: NextPage = () => {
   return (
@@ -83,6 +83,10 @@ const Home: NextPage = () => {
         <AboutSection />
 
         <ServicesSectiion />
+
+        <ContactSection />
+
+        {/* <Careers /> */}
 
         {/* <HighlightsSection /> */}
 
@@ -481,6 +485,11 @@ const AboutSection = () => {
 const ServicesSectiion = () => {
   return <Services />;
 };
+
+const ContactSection = () => {
+  return <Contact />;
+};
+
 export default Home;
 
 // export async function getStaticProps() {
