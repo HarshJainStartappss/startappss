@@ -4,6 +4,18 @@
   font-size: 16px !important;
 }
 
+.myLogo {
+  cursor: pointer;
+}
+
+.mobileNav {
+  color: #abadaf;
+}
+
+.mobileNav:hover {
+  color: white !important;
+}
+
 /* ------- About --------  */
 .count-box {
   display: flex;
@@ -54,21 +66,41 @@
 
 /* ------ Services ------ */
 
+.serviceTxtBox h5 {
+  font-size: 16px !important;
+}
+
+.serviceTxtBox ul li {
+  font-size: 14px !important;
+}
+
+.serviceTxtBox p {
+  font-size: 16px !important;
+}
+
 .iconBox {
   display: flex;
   /* padding: 10px; */
   height: 120px;
-  align-items: center;
+  /* align-items: center; */
   padding: 20px;
 }
 
 .iconBox .icon {
-  font-size: 35px;
+  font-size: 26px;
   padding-top: 10px;
 }
 
 .servicesHead {
   margin-left: 12px;
+}
+
+.servicesHead h4 {
+  font-size: 18px;
+}
+
+.servicesHead p {
+  font-size: 16px;
 }
 
 .clientImageBox {
@@ -79,6 +111,9 @@
 .clientimg {
   height: 100px;
   width: auto;
+}
+.myTabs {
+  overflow-x: scroll !important;
 }
 
 .imgServicesTabs {
@@ -198,7 +233,7 @@
 
 .contact {
   padding: 35px 10px;
-  background-color: black;
+  /* background-color: black; */
 }
 
 .contact .info-box {
@@ -472,4 +507,62 @@
   .text {
     max-width: 45em;
   }
+}
+
+/* Small phones (portrait) */
+@media (max-width: 480px) {
+  /* Your CSS rules here */
+}
+
+/* Medium phones (portrait) */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Your CSS rules here */
+  /* body {
+    background-color: green !important;
+  } */
+
+  /* font-size: 16px; */
+}
+
+/* Large phones (landscape) */
+@media (min-width: 568px) and (max-width: 812px) {
+  /* Your CSS rules here */
+}
+
+/* Small tablets (portrait) */
+@media (min-width: 600px) and (max-width: 768px) {
+  /* Your CSS rules here */
+}
+
+/* Large tablets (landscape) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Your CSS rules here */
+  /* body {
+    background-color: red !important;
+  } */
+}
+
+/* Small desktops/laptops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* Your CSS rules here */
+}
+
+/* Medium desktops/laptops */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  /* Your CSS rules here */
+}
+
+/* Large desktops/laptops */
+@media (min-width: 1441px) and (max-width: 1920px) {
+  /* Your CSS rules here */
+}
+
+/* Extra-large desktops/laptops */
+@media (min-width: 1921px) {
+  /* Your CSS rules here */
+}
+
+/* Ultra-wide monitors */
+@media (min-width: 2560px) {
+  /* Your CSS rules here */
 }

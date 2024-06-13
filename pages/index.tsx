@@ -107,7 +107,7 @@ const HeroSection: React.FC = () => {
     <Box position="relative" overflow="hidden">
       <BackgroundGradient height="100%" zIndex="-1" />
       <Container maxW="container.xl" pt={{ base: 40, lg: 60 }} pb="0">
-        <Stack direction={{ base: "column", lg: "row" }} alignItems="center">
+        <Stack direction={{ base: "column", lg: "row" }} alignItems="baseline">
           <Hero
             id="home"
             justifyContent="flex-start"

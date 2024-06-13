@@ -37,7 +37,7 @@ const ServicesProfiles = () => {
     // pauseOnHover: true,
   };
   return (
-    <div className="themeBg">
+    <div className="bgSecColor">
       <div className="slider-container">
         <Slider {...settings}>
           {data?.map((curElem, index) => {

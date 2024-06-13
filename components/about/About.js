@@ -33,7 +33,13 @@ const AboutJs = () => {
 
   return (
     <>
-      <Section id="about" pos="relative" innerWidth="80%">
+      <Section
+        id="about"
+        pos="relative"
+        innerWidth="90%"
+        paddingTop="20px"
+        paddingBottom="20px"
+      >
         <div className="afterHead">
           <HeadingSec title="About us" />
         </div>
@@ -41,8 +47,8 @@ const AboutJs = () => {
           <div className="container" data-aos="fade-up">
             <div className="row justify-content-center">
               <div className="col-lg-12">
-                <div className="row justify-content-end mb-4">
-                  <div className="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                <div className="row justify-content-center mb-4">
+                  <div className="col-lg-3 col-md-5 col-12 d-md-flex align-items-md-stretch  mb-4">
                     <div className="count-box themeBg">
                       <div className="count-box-icon">
                         <FontAwesomeIcon
@@ -51,19 +57,19 @@ const AboutJs = () => {
                         />
                       </div>
                       <div className="count-box-content">
-                        <span>10</span>
+                        <span>100</span>
                         <p>Happy Clients </p>
                       </div>
                     </div>
                   </div>
 
-                  <div className="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                  <div className="col-lg-3 col-md-5 col-12 d-md-flex align-items-md-stretch  mb-4">
                     <div className="count-box themeBg">
                       <div className="count-box-icon">
                         <FontAwesomeIcon className="myIcon" icon={faFile} />
                       </div>
                       <div className="count-box-content">
-                        <span>15</span>
+                        <span>150</span>
                         <p>Projects Delivered </p>
                       </div>
                     </div>
@@ -79,13 +85,13 @@ const AboutJs = () => {
                                                   </div> */}
                   </div>
 
-                  <div className="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                  <div className="col-lg-3 col-md-5 col-12 d-md-flex align-items-md-stretch  mb-4">
                     <div className="count-box themeBg">
                       <div className="count-box-icon">
                         <FontAwesomeIcon className="myIcon" icon={faClock} />
                       </div>
                       <div className="count-box-content">
-                        <span>3</span>
+                        <span>13</span>
                         <p>Years of experience </p>
                       </div>
                     </div>
@@ -101,14 +107,14 @@ const AboutJs = () => {
                                                   </div> */}
                   </div>
 
-                  <div className="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                  <div className="col-lg-3 col-md-5 col-12 d-md-flex align-items-md-stretch  mb-4">
                     <div className="count-box themeBg">
                       <div className="count-box-icon">
                         <FontAwesomeIcon className="myIcon" icon={faMedal} />
                       </div>
                       <div className="count-box-content">
-                        <span>300</span>
-                        <p>Screens Coded </p>
+                        <span>300 +</span>
+                        <p>Certified developers</p>
                       </div>
                     </div>
                     {/* <div className="count-box">

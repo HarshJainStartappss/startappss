@@ -20,7 +20,13 @@ import ServicesProfiles from "./ServicesProfiles";
 const Services = () => {
   return (
     <>
-      <Section id="services" pos="relative" innerWidth="80%">
+      <Section
+        id="services"
+        pos="relative"
+        innerWidth="90%"
+        paddingTop="20px"
+        paddingBottom="20px"
+      >
         <div className="afterHead">
           <HeadingSec title="Our Services" />
         </div>

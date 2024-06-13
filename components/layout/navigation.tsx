@@ -15,6 +15,7 @@ import { useDisclosure, useUpdateEffect } from "@chakra-ui/react";
 
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import CareersModal from "../careers-modal/CareersModal.js";
 
 const Navigation: React.FC = () => {
   const [careerModal, setCareerModal] = React.useState(false);
@@ -42,26 +43,7 @@ const Navigation: React.FC = () => {
 
   return (
     <>
-      <div className="careerModal">
-        <Modal
-          show={careerModal}
-          onHide={handleClose}
-          centered
-          dialogClassName="custom-modal"
-        >
-          <Modal.Header closeButton>
-            <Modal.Title>
-              <h2> Careers </h2>
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <h4> Oops, Currently We Are Not Hiring ! </h4>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button onClick={handleClose}>Ok</Button>
-          </Modal.Footer>
-        </Modal>
-      </div>
+      <CareersModal careerModal={careerModal} handleClose={handleClose} />
 
       <HStack spacing="2" flexShrink={0}>
         {siteConfig.header.links.map(({ href, id, ...props }, i) => {
@@ -71,12 +53,6 @@ const Navigation: React.FC = () => {
               href={href || `/#${id}`}
               key={i}
               isActive={router.asPath === `/#${id}`}
-              // isActive={
-              //   !!(
-              //     (id && activeId === id) ||
-              //     (href && !!router.asPath.match(new RegExp(href)))
-              //   )
-              // }
               {...props}
               className="myNav"
             >

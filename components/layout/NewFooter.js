@@ -38,7 +38,6 @@ const Footer = () => {
                     <br />
                     Indore MP 452010, India
                     <br />
-                    <br />
                     <strong>Phone:</strong> +91 92389 20590
                     <br />
                     <strong>Email:</strong> info@startappss.com
