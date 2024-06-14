@@ -1,6 +1,5 @@
 import * as React from "react";
 import { HStack } from "@chakra-ui/react";
-import { useRef } from "react";
 import { useRouter } from "next/router";
 
 import siteConfig from "data/config";
@@ -13,22 +12,20 @@ import { MobileNavButton } from "components/mobile-nav";
 import { MobileNavContent } from "components/mobile-nav";
 import { useDisclosure, useUpdateEffect } from "@chakra-ui/react";
 
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
 import CareersModal from "../careers-modal/CareersModal.js";
 
 const Navigation: React.FC = () => {
   const [careerModal, setCareerModal] = React.useState(false);
   const mobileNav = useDisclosure();
   const router = useRouter();
-  const activeId = useScrollSpy(
-    siteConfig.header.links
-      .filter(({ id }) => id)
-      .map(({ id }) => `[id="${id}"]`),
-    {
-      threshold: 0.75,
-    }
-  );
+  // const activeId = useScrollSpy(
+  //   siteConfig.header.links
+  //     .filter(({ id }) => id)
+  //     .map(({ id }) => `[id="${id}"]`),
+  //   {
+  //     threshold: 0.75,
+  //   }
+  // );
 
   const mobileNavBtnRef = React.useRef<HTMLButtonElement>();
 
@@ -38,8 +35,6 @@ const Navigation: React.FC = () => {
 
   const handleClose = () => setCareerModal(false);
   const handleShow = () => setCareerModal(true);
-
-  // console.log("router==>", router);
 
   return (
     <>
@@ -64,18 +59,9 @@ const Navigation: React.FC = () => {
         <NavLink
           display={["none", null, "block"]}
           href={`/#careers`}
-          // key={i}
           isActive={router.asPath === `/#careers`}
-          // isActive={
-          //   !!(
-          //     (id && activeId === id) ||
-          //     (href && !!router.asPath.match(new RegExp(href)))
-          //   )
-          // }
-          // {...props}
           className="myNav"
           onClick={handleShow}
-          // onClick={}
         >
           Careers
         </NavLink>

@@ -1,12 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import startappsImg from "../../public/static/assets/img/Startappss.jpg";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   faTwitter,
-//   faInstagram,
-//   faLinkedin,
-// } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
@@ -23,11 +17,7 @@ const Footer = () => {
             <div className="row">
               <div className="col-lg-2 col-md-10 align-items-center justify-content-end">
                 <Image src={startappsImg} className="img-fluid" alt="" />
-                {/* <img
-                  //   src="./assets/img/Startappss.jpg"
-                  className="img-fluid"
-                  alt=""
-                /> */}
+
                 <a href="#"></a>
               </div>
               <div className="col-lg-3 col-md-6">
@@ -55,7 +45,6 @@ const Footer = () => {
                         className="footerIcon"
                         // spin
                       />
-                      {/* <i className="bx bxl-twitter"></i> */}
                     </a>
 
                     <a
@@ -82,7 +71,6 @@ const Footer = () => {
                         className="footerIcon"
                         // spin
                       />
-                      {/* <i className="bx bxl-linkedin"></i> */}
                     </a>
                   </div>
                 </div>

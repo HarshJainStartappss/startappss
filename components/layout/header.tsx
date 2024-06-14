@@ -8,12 +8,9 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import Navigation from "./navigation";
-import { Logo } from "./logo";
 import { useScroll } from "framer-motion";
-// import logo from "../../public/static/assets/img/Creating Digital Solutions.jpg";
 import logo from "../../public/static/assets/img/Logo (2).png";
 import Image from "next/image";
-import { useRouter } from "next/router";
 
 export interface HeaderProps extends Omit<BoxProps, "children"> {}
 

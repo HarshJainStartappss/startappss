@@ -1,4 +1,3 @@
-//@ts-ignore
 import { Box } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
@@ -10,8 +9,6 @@ import {
   AnnouncementBannerProps,
 } from "../announcement-banner";
 import Footer from "./NewFooter";
-// import { Footer, FooterProps } from './footer'
-// import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 
 interface LayoutProps {
   children: ReactNode;
@@ -31,9 +28,7 @@ export const Layout: React.FC<LayoutProps> = (props) => {
       <Header {...headerProps} />
       <Box as="main">
         <SkipNavContent />
-        {/* <AppRouterCacheProvider> */}
         {children}
-        {/* </AppRouterCacheProvider> */}
       </Box>
       {/* <Footer {...footerProps} /> */}
       <Footer />
