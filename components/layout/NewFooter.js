@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import startappsImg from "../../public/static/assets/img/Startappss.jpg";
+// import startappsImg from "../../public/static/assets/img/Startappss.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
