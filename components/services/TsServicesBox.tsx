@@ -1,8 +1,15 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Row, Col } from "react-bootstrap";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
-const ServicesBox = (props) => {
+interface servicesBoxProps {
+  iconName: IconProp;
+  head: string;
+  para: string;
+}
+
+export const TsServicesBox: React.FC<servicesBoxProps> = (props) => {
   const { iconName, head, para } = props;
 
   return (
@@ -19,5 +26,3 @@ const ServicesBox = (props) => {
     </>
   );
 };
-
-export default ServicesBox;

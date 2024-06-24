@@ -2,7 +2,12 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-const CareersModal = (props) => {
+export interface CareerModalProp {
+  careerModal: boolean;
+  handleClose: () => void;
+}
+
+export const TsCareerModal: React.FC<CareerModalProp> = (props) => {
   const { careerModal, handleClose } = props;
   return (
     <>
@@ -29,5 +34,3 @@ const CareersModal = (props) => {
     </>
   );
 };
-
-export default CareersModal;

@@ -7,9 +7,13 @@ import { FallInPlace } from "components/motion/fall-in-place";
 import { Hero } from "components/hero";
 
 import { BackgroundGradient } from "components/gradients/background-gradient";
-import Services from "../components/services/Services.js";
-import About from "components/about/About";
-import Contact from "../components/contact/Contact.js";
+// import Services from "../components/services/Services.js";
+// import About from "components/about/About";
+import { Tsabout } from "components/about/tsabout";
+import { TsContact } from "components/contact/tsContact";
+import { TsServices } from "components/services/TsServices";
+
+// import Contact from "../components/contact/Contact.js";
 
 const Home: NextPage = () => {
   return (
@@ -60,15 +64,17 @@ const HeroSection: React.FC = () => {
 };
 
 const AboutSection = () => {
-  return <About />;
+  // return <About />;
+  return <Tsabout />;
 };
 
 const ServicesSectiion = () => {
-  return <Services />;
+  return <TsServices />;
 };
 
 const ContactSection = () => {
-  return <Contact />;
+  return <TsContact />;
+  // return <Contact />;
 };
 
 export default Home;

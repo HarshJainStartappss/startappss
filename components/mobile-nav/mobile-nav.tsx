@@ -29,7 +29,8 @@ import { RemoveScroll } from "react-remove-scroll";
 import siteConfig from "data/config";
 // import { Logo } from "components/layout/logo";
 import { Link } from "@saas-ui/react";
-import CareersModal from "components/careers-modal/CareersModal";
+// import CareersModal from "components/careers-modal/CareersModal";
+import { TsCareerModal } from "components/careers-modal";
 import Image from "next/image";
 import logo from "../../public/static/assets/img/Creating Digital Solutions.jpg";
 
@@ -113,7 +114,9 @@ export function MobileNavContent(props: MobileNavContentProps) {
 
   return (
     <>
-      <CareersModal careerModal={careerModal} handleClose={handleClose} />
+      {/* <CareersModal careerModal={careerModal} handleClose={handleClose} /> */}
+      <TsCareerModal careerModal={careerModal} handleClose={handleClose} />
+
       <AnimatePresence>
         {isOpen && (
           <RemoveScroll forwardProps>

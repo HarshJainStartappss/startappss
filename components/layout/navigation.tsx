@@ -12,7 +12,8 @@ import { MobileNavButton } from "components/mobile-nav";
 import { MobileNavContent } from "components/mobile-nav";
 import { useDisclosure, useUpdateEffect } from "@chakra-ui/react";
 
-import CareersModal from "../careers-modal/CareersModal.js";
+// import CareersModal from "../careers-modal/CareersModal.js";
+import { TsCareerModal } from "components/careers-modal/tsCareerModal";
 
 const Navigation: React.FC = () => {
   const [careerModal, setCareerModal] = React.useState(false);
@@ -38,7 +39,8 @@ const Navigation: React.FC = () => {
 
   return (
     <>
-      <CareersModal careerModal={careerModal} handleClose={handleClose} />
+      {/* <CareersModal careerModal={careerModal} handleClose={handleClose} /> */}
+      <TsCareerModal careerModal={careerModal} handleClose={handleClose} />
 
       <HStack spacing="2" flexShrink={0}>
         {siteConfig.header.links.map(({ href, id, ...props }, i) => {

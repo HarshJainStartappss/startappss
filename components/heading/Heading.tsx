@@ -2,7 +2,11 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { Heading } from "@chakra-ui/react";
 
-const HeadingSec = (props) => {
+interface HeadingProp {
+  title: string;
+}
+
+export const TsHeading: React.FC<HeadingProp> = (props) => {
   const { title } = props;
   return (
     <>
@@ -16,5 +20,3 @@ const HeadingSec = (props) => {
     </>
   );
 };
-
-export default HeadingSec;

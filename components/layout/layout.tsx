@@ -8,7 +8,8 @@ import {
   AnnouncementBanner,
   AnnouncementBannerProps,
 } from "../announcement-banner";
-import Footer from "./NewFooter";
+// import Footer from "./NewFooter";
+import { TsFooter } from "./footer";
 
 interface LayoutProps {
   children: ReactNode;
@@ -31,7 +32,8 @@ export const Layout: React.FC<LayoutProps> = (props) => {
         {children}
       </Box>
       {/* <Footer {...footerProps} /> */}
-      <Footer />
+      {/* <Footer /> */}
+      <TsFooter />
     </Box>
   );
 };

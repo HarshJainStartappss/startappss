@@ -1,6 +1,7 @@
 import React from "react";
 import { Section } from "components/section";
-import HeadingSec from "components/heading/HeadingSec";
+// import HeadingSec from "components/heading/HeadingSec";
+import { TsHeading } from "components/heading/Heading";
 import { Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,7 +10,7 @@ import {
   faPhoneVolume,
 } from "@fortawesome/free-solid-svg-icons";
 
-const Contact = () => {
+export const TsContact: React.FC = () => {
   return (
     <>
       <Section
@@ -20,18 +21,19 @@ const Contact = () => {
         paddingBottom="20px"
       >
         <div className="afterHead">
-          <HeadingSec title="Contact Us" />
+          {/* <HeadingSec title="Contact Us" /> */}
+          <TsHeading title="Contact Us" />
         </div>
 
         <div className="bgSecColor">
           <div className="secDiff">
             <section id="contact" className="contact">
               {/* <div className="container" data-aos="fade-up">
-              <div className=" section-title">
-                <h2>Contact</h2>
-                <p>Contact Us</p>
-              </div>
-            </div> */}
+                <div className=" section-title">
+                  <h2>Contact</h2>
+                  <p>Contact Us</p>
+                </div>
+              </div> */}
 
               <div className="row">
                 <div className="col-lg-6">
@@ -103,18 +105,18 @@ const Contact = () => {
                       <textarea
                         className="form-control"
                         name="message"
-                        rows="3"
+                        rows={3}
                         placeholder="Message"
                         required
                       ></textarea>
                     </div>
                     {/* <div className="my-3">
-                    <div className="loading">Loading</div>
-                    <div className="error-message"></div>
-                    <div className="sent-message">
-                      Your message has been sent. Thank you!
-                    </div>
-                  </div> */}
+                      <div className="loading">Loading</div>
+                      <div className="error-message"></div>
+                      <div className="sent-message">
+                        Your message has been sent. Thank you!
+                      </div>
+                    </div> */}
                     <div className="text-center mt-4">
                       <button type="submit">Send Message</button>
                     </div>
@@ -128,5 +130,3 @@ const Contact = () => {
     </>
   );
 };
-
-export default Contact;

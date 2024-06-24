@@ -8,7 +8,7 @@ import fourthImg from "../../public/static/assets/img/clients/Al-Futtaim.gif";
 import fivthImg from "../../public/static/assets/img/clients/cocosto.jpg";
 import sixthImg from "../../public/static/assets/img/clients/pixel15.jpg";
 
-const ServicesSlider = () => {
+export const TsServicesSider: React.FC = () => {
   var settings = {
     dots: true,
     infinite: true,
@@ -18,7 +18,6 @@ const ServicesSlider = () => {
     autoplaySpeed: 1500,
     pauseOnHover: true,
   };
-
   return (
     <>
       <div className="slider-container">
@@ -46,5 +45,3 @@ const ServicesSlider = () => {
     </>
   );
 };
-
-export default ServicesSlider;

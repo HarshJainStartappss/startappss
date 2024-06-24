@@ -1,5 +1,5 @@
-import React from "react";
-import HeadingSec from "components/heading/HeadingSec";
+// import HeadingSec from "components/heading/HeadingSec";
+import { TsHeading } from "components/heading/Heading";
 import { Section } from "components/section";
 import { Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,12 +12,17 @@ import {
   faMobileScreenButton,
   faPlaneDeparture,
 } from "@fortawesome/free-solid-svg-icons";
-import ServicesBox from "./ServicesBox";
-import ServicesSlider from "./ServicesSlider";
-import ServicesTabs from "./ServicesTabs";
-import ServicesProfiles from "./ServicesProfiles";
+// import ServicesBox from "./ServicesBox";
+import { TsServicesBox } from "./TsServicesBox";
+// import ServicesProfiles from "./ServicesProfiles";
+import { TsServicesProfile } from "./TsServicesProfile";
 
-const Services = () => {
+// import ServicesSlider from "./ServicesSlider";
+import { TsServicesSider } from "./TsServicesSlider";
+// import ServicesTabs from "./ServicesTabs";
+import { TsServicesTabs } from "./TsServicesTabs";
+
+export const TsServices: React.FC = () => {
   return (
     <>
       <Section
@@ -28,18 +33,19 @@ const Services = () => {
         paddingBottom="20px"
       >
         <div className="afterHead">
-          <HeadingSec title="Our Services" />
+          {/* <HeadingSec title="Our Services" /> */}
+          <TsHeading title="Our Services" />
         </div>
 
         <div className="secDiff">
           <Row>
-            <ServicesBox
+            <TsServicesBox
               iconName={faLaptop}
               head={"Comprehensive IT Solutions"}
               para={"Software Development, Web Development, E-Commerce"}
             />
 
-            <ServicesBox
+            <TsServicesBox
               iconName={faLink}
               head={"Blockchain"}
               para={
@@ -47,7 +53,7 @@ const Services = () => {
               }
             />
 
-            <ServicesBox
+            <TsServicesBox
               iconName={faInfinity}
               head={"DevOps"}
               para={
@@ -55,7 +61,7 @@ const Services = () => {
               }
             />
 
-            <ServicesBox
+            <TsServicesBox
               iconName={faCloud}
               head={"Cloud Infra & Services"}
               para={
@@ -63,7 +69,7 @@ const Services = () => {
               }
             />
 
-            <ServicesBox
+            <TsServicesBox
               iconName={faMobileScreenButton}
               head={"Mobile App Development"}
               para={
@@ -71,7 +77,7 @@ const Services = () => {
               }
             />
 
-            <ServicesBox
+            <TsServicesBox
               iconName={faPlaneDeparture}
               head={"Strategic Consulting"}
               para={"IT Strategy Planning, Digital Transformation"}
@@ -81,22 +87,21 @@ const Services = () => {
 
         <div className="secDiff">
           <Row>
-            <ServicesSlider />
+            <TsServicesSider />
           </Row>
         </div>
 
         <div className="secDiff">
           <Row>
-            <ServicesTabs />
+            {/* <ServicesTabs /> */}
+            <TsServicesTabs />
           </Row>
         </div>
 
         <div className="secDiff">
-          <ServicesProfiles />
+          <TsServicesProfile />
         </div>
       </Section>
     </>
   );
 };
-
-export default Services;
