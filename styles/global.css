@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .themeBg {
   background: #1d2025 !important;
   color: white !important;

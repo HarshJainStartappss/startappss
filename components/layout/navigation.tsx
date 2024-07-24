@@ -41,7 +41,6 @@ const Navigation: React.FC = () => {
     <>
       {/* <CareersModal careerModal={careerModal} handleClose={handleClose} /> */}
       <TsCareerModal careerModal={careerModal} handleClose={handleClose} />
-
       <HStack spacing="2" flexShrink={0}>
         {siteConfig.header.links.map(({ href, id, ...props }, i) => {
           return (

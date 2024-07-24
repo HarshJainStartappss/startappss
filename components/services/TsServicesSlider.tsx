@@ -7,39 +7,72 @@ import thirdImg from "../../public/static/assets/img/clients/IQVIA.jpg";
 import fourthImg from "../../public/static/assets/img/clients/Al-Futtaim.gif";
 import fivthImg from "../../public/static/assets/img/clients/cocosto.jpg";
 import sixthImg from "../../public/static/assets/img/clients/pixel15.jpg";
+import { motion } from "framer-motion";
 
 export const TsServicesSider: React.FC = () => {
   var settings = {
-    dots: true,
+    // dots: true,
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
     pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 768, // This is an example breakpoint for tablets
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   };
   return (
     <>
       <div className="slider-container">
         <Slider {...settings}>
-          <div className="clientImageBox">
+          <motion.div
+            className="clientImageBox"
+            whileHover={{ scale: 1.5 }}
+            whileTap={{ scale: 0.8 }}
+          >
             <Image src={firstImg} alt="client one" className="clientimg" />
-          </div>
-          <div className="clientImageBox">
+          </motion.div>
+          <motion.div
+            className="clientImageBox"
+            whileHover={{ scale: 1.5 }}
+            whileTap={{ scale: 0.8 }}
+          >
             <Image src={secondImg} alt="client two" className="clientimg" />
-          </div>
-          <div className="clientImageBox">
+          </motion.div>
+          <motion.div
+            className="clientImageBox"
+            whileHover={{ scale: 1.5 }}
+            whileTap={{ scale: 0.8 }}
+          >
             <Image src={thirdImg} alt="client three" className="clientimg" />
-          </div>
-          <div className="clientImageBox">
+          </motion.div>
+          <motion.div
+            className="clientImageBox"
+            whileHover={{ scale: 1.5 }}
+            whileTap={{ scale: 0.8 }}
+          >
             <Image src={fourthImg} alt="client fourth" className="clientimg" />
-          </div>
-          <div className="clientImageBox">
+          </motion.div>
+          <motion.div
+            className="clientImageBox"
+            whileHover={{ scale: 1.5 }}
+            whileTap={{ scale: 0.8 }}
+          >
             <Image src={fivthImg} alt="client fiveth" className="clientimg" />
-          </div>
-          <div className="clientImageBox">
+          </motion.div>
+          <motion.div
+            className="clientImageBox"
+            whileHover={{ scale: 1.5 }}
+            whileTap={{ scale: 0.8 }}
+          >
             <Image src={sixthImg} alt="client sixth" className="clientimg" />
-          </div>
+          </motion.div>
         </Slider>
       </div>
     </>

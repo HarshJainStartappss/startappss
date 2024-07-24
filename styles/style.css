@@ -84,6 +84,7 @@
   /* height: 120px; */
   /* align-items: center; */
   padding: 20px;
+  height: 100%;
 }
 
 .iconBox .icon {
@@ -106,6 +107,7 @@
 .clientImageBox {
   display: flex !important;
   justify-content: center !important;
+  margin: 0px 10px;
 }
 
 .clientimg {

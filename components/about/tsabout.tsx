@@ -20,6 +20,17 @@ export const Tsabout: React.FC = () => {
   const [boxOne, setBoxOne] = useState(false);
   const [boxTwo, setBoxTwo] = useState(false);
   const [boxThree, setBoxThree] = useState(false);
+  const variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        ease: "easeInOut",
+      },
+    },
+  };
   return (
     <>
       <Section
